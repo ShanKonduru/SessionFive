@@ -5,6 +5,7 @@ async function TryCatchFinallyBlocl(x){
         x = Number(x);
         if (x > 10) throw "is too high";
         if (x < 5) throw "is too low";
+        console.log("no error");
       } catch (err) {
           console.log("Error: " + err + ".");
       } finally {
@@ -12,8 +13,9 @@ async function TryCatchFinallyBlocl(x){
       }
 }
 
-let x = 1; 
+let x = ''; 
 /* Possible Values for x
+x='' - Error Empty string
 x = 1 - Error "number is to low"
 x = 11 - Error "number is to  High"
 x = 'shan' - Error "is not a number"
